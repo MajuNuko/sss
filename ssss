@@ -35,7 +35,7 @@ wait(1)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "JailBirdhacks", -- Required
-	Text = "When Using this Script When U die ReExecute The script It causes No Fps Drops", -- Required
+	Text = "Welcome Ur using a FreeVersion Join Discord For Paid Version More Features + Gui", -- Required
     Icon = "rbxassetid://17849728202";
 })
 -- Function to create a rainbow effect on text
@@ -62,7 +62,7 @@ function RainbowText(text)
 end
 
 -- Call the function with the desired text
-RainbowText("JailBirdHackBeta")
+RainbowText("JailBirdHackBetaFreeV")
 
 end
 
@@ -263,28 +263,8 @@ elseif Errored and not Success then
     print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
 end
  end
-local function func5()
-        wait(7)
-                game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "jailBirdCheatsBetaFreeV";
-            Text = "Hey To Get Rid of me Please Join the Discord!";
-            Duration = 9999999;
-        })
-        wait(7)
-                game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "jailBirdCheatsBetaFreeV";
-            Text = "Hey To Get Rid of me Please Join the Discord!";
-            Duration = 9999999;
-        })
-        wait(7)
-                game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "jailBirdCheatsBetaFreeV";
-            Text = "Hey To Get Rid of me Please Join the Discord!";
-            Duration = 9999999;
-        })
-end
+
 spawn(func1)
 spawn(func2)
 spawn(func3)
 spawn(func4)
-spawn(func5)
