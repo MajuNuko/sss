@@ -21,12 +21,6 @@ end
 end
 
 local function func2()
-local plr = game.Players.LocalPlayer
-
-
-plr.CameraMaxZoomDistance = 19
-Wait(1)
-plr.CameraMinZoomDistance = 19
 local spinSpeed = 90
 
 while true do
@@ -44,31 +38,32 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "When Using this Script When U die ReExecute The script It causes No Fps Drops", -- Required
     Icon = "rbxassetid://17849728202";
 })
-local function createChatBubble(player, message)
-    local chatBubble = Instance.new("BillboardGui")
-    chatBubble.Parent = player.Character.Head
-    chatBubble.Size = UDim2.new(0, 100, 0, 40)
-    chatBubble.StudsOffset = Vector3.new(0, 3, 0)
-
-    local chatText = Instance.new("TextLabel")
-    chatText.Parent = chatBubble
-    chatText.Size = UDim2.new(1, 0, 1, 0)
-    chatText.Text = message
-    chatText.TextColor3 = Color3.new(1, 1, 1)
-    chatText.BackgroundTransparency = 1
-    chatText.TextScaled = true
-
-    -- Rainbow effect for the chat bubble text
-    local hue = 0
-    while wait(0.1) do
-        hue = (hue + 0.02) % 1
-        chatText.TextColor3 = Color3.fromHSV(hue, 1, 1)
+-- Function to create a rainbow effect on text
+function RainbowText(text)
+    local rainbowColors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 165, 0), Color3.fromRGB(255, 255, 0),
+                           Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130),
+                           Color3.fromRGB(238, 130, 238)}
+    local gui = Instance.new("ScreenGui")
+    gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Parent = gui
+    textLabel.Text = text
+    textLabel.TextSize = 24
+    textLabel.TextColor3 = Color3.new(1, 1, 1)
+    textLabel.Position = UDim2.new(0.9, 0, 0.5, 0)
+    
+    local i = 1
+    while true do
+        textLabel.TextColor3 = rainbowColors[i]
+        i = i % #rainbowColors + 1
+        wait(0.1)
     end
 end
 
--- Example: Force a player to say "⭐JailBirdHacks⭐" in a rainbow chat bubble
-local player = game.Players:GetPlayers()[1]
-createChatBubble(player, "⭐JailBirdHacks⭐")
+-- Call the function with the desired text
+RainbowText("JailBirdHackBeta")
+
 end
 
 local function func5()
