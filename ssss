@@ -205,7 +205,7 @@ local function CreateESP()
 end
 
 if _G.DefaultSettings == true then
-    _G.TeamCheck = false
+    _G.TeamCheck = true
     _G.ESPVisible = true
     _G.TextColor = Color3.fromRGB(250, 40, 40)
     _G.TextSize = 14
