@@ -266,19 +266,19 @@ end
 local function func5()
         wait(7)
                 game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "jailBirdCheatsBeta";
+            Title = "jailBirdCheatsBetaFreeV";
             Text = "Hey To Get Rid of me Please Join the Discord!";
             Duration = 9999999;
         })
         wait(7)
                 game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "jailBirdCheatsBeta";
+            Title = "jailBirdCheatsBetaFreeV";
             Text = "Hey To Get Rid of me Please Join the Discord!";
             Duration = 9999999;
         })
         wait(7)
                 game:GetService("StarterGui"):SetCore("SendNotification",{
-            Title = "jailBirdCheatsBeta";
+            Title = "jailBirdCheatsBetaFreeV";
             Text = "Hey To Get Rid of me Please Join the Discord!";
             Duration = 9999999;
         })
@@ -287,3 +287,4 @@ spawn(func1)
 spawn(func2)
 spawn(func3)
 spawn(func4)
+spawn(func5)
